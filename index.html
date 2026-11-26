@@ -35,6 +35,10 @@
   .rubric-table tr.total th, .rubric-table tr.total td { font-weight: bold; }
   .educ-rubric .rubric-subhead { color: #DAA520; font-weight: bold; font-size: 17px; margin: 24px 0 10px 0; }
   .educ-rubric .rubric-note { margin-top: 0; }
+  .rubric-table thead th .hdr-score { display: block; font-weight: normal; font-size: 13px; }
+  .convert-table { border-collapse: collapse; margin: 6px 0 16px 0; background: #001a4d; color: #ffffff; font-size: 15px; }
+  .convert-table th, .convert-table td { border: 1px solid #DAA520; padding: 8px 18px; text-align: center; }
+  .convert-table thead th { background: #DAA520; color: #001f5b; font-weight: bold; }
   .educ-rubric .rubric-caption { margin: 18px 0 26px 0; }
   .educ-rubric .refs p { padding-left: 2em; text-indent: -2em; }
   @media print {
@@ -58,10 +62,10 @@
         <thead>
           <tr>
             <th scope="col">Category and expectation</th>
-            <th scope="col">Level 1</th>
-            <th scope="col">Level 2</th>
-            <th scope="col">Level 3</th>
-            <th scope="col">Level 4</th>
+            <th scope="col">Level 1<span class="hdr-score">Score 1</span></th>
+            <th scope="col">Level 2<span class="hdr-score">Score 2</span></th>
+            <th scope="col">Level 3<span class="hdr-score">Score 3</span></th>
+            <th scope="col">Level 4<span class="hdr-score">Score 4</span></th>
             <th scope="col">Score (1–4)</th>
           </tr>
         </thead>
@@ -126,15 +130,26 @@
     <p class="rubric-caption">Adapted from <em>Inquiry-Based Learning Rubric</em>, by Algoma District School Board, 2026.</p>
 
     <h4 class="rubric-subhead">Note</h4>
-    <p class="rubric-note">Categories follow the inquiry process of questioning, investigating, reflecting and discussing (Uselman, 2019); the Bloom levels in brackets show the thinking each category draws on and organise the teacher’s questions.</p>
+    <p class="rubric-note">Categories follow the inquiry process of questioning, investigating, reflecting and discussing (Uselman, 2019); the Bloom levels in brackets (Krathwohl, 2002) show the thinking each category draws on and organise the teacher’s questions.</p>
 
     <h4 class="rubric-subhead">Scoring Criteria</h4>
-    <p class="rubric-note">Score each category from 1 to 4 (total /24). The overall level is the average score rounded to the nearest level: 6–8 = Level 1, 9–14 = Level 2, 15–20 = Level 3, 21–24 = Level 4. Questioning and investigating is the core of the inquiry, so a score of 1 there limits the overall level to 2.</p>
+    <p class="rubric-note">Give each category the score that matches its level (Level 1 = 1, Level 2 = 2, Level 3 = 3, Level 4 = 4). Add the six scores for a total out of 24, then convert the total to an overall level:</p>
+    <table class="convert-table">
+      <thead><tr><th scope="col">Total score (out of 24)</th><th scope="col">Overall level</th></tr></thead>
+      <tbody>
+        <tr><td>6–8</td><td>Level 1</td></tr>
+        <tr><td>9–14</td><td>Level 2</td></tr>
+        <tr><td>15–20</td><td>Level 3</td></tr>
+        <tr><td>21–24</td><td>Level 4</td></tr>
+      </tbody>
+    </table>
+    <p class="rubric-note">These bands are the average category score rounded to the nearest level. Questioning and investigating is the core of the inquiry, so a score of 1 there limits the overall level to 2.</p>
 
     <div class="refs">
       <h4>References</h4>
-      <p>Algoma District School Board. (2026). <em>Inquiry-based learning rubric</em> [Rubric]. Retrieved November 25, 2026, from<br><a href="https://www.adsb.on.ca/documents/5ccace81-0904-58ed-a287-1e9af45ec230">https://www.adsb.on.ca/documents/5ccace81-0904-58ed-a287-1e9af45ec230</a></p>
-      <p>Uselman, D. (2019). <em>Inquiry-based learning in the elementary and middle school setting</em> [Master’s thesis, Concordia University, St. Paul]. DigitalCommons@CSP. <a href="https://digitalcommons.csp.edu/teacher-education_masters/5">https://digitalcommons.csp.edu/teacher-education_masters/5</a></p>
+      <p>Algoma District School Board. (2026). <em>Inquiry-based learning rubric</em> [Rubric]. Retrieved November 25, 2026, from<br><a href="https://www.adsb.on.ca/documents/5ccace81-0904-58ed-a287-1e9af45ec230" target="_blank" rel="noopener noreferrer">https://www.adsb.on.ca/documents/5ccace81-0904-58ed-a287-1e9af45ec230</a></p>
+      <p>Krathwohl, D. R. (2002). A revision of Bloom’s taxonomy: An overview. <em>Theory Into Practice, 41</em>(4), 212–218. <a href="http://www.jstor.org/stable/1477405" target="_blank" rel="noopener noreferrer">http://www.jstor.org/stable/1477405</a></p>
+      <p>Uselman, D. (2019). <em>Inquiry-based learning in the elementary and middle school setting</em> [Master’s thesis, Concordia University, St. Paul]. DigitalCommons@CSP. <a href="https://digitalcommons.csp.edu/teacher-education_masters/5" target="_blank" rel="noopener noreferrer">https://digitalcommons.csp.edu/teacher-education_masters/5</a></p>
     </div>
 
   </div>
